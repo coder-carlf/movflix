@@ -9,7 +9,7 @@ const App = () => {
 
   const searchMovies = async (title) => {
     const response = await fetch(
-      `http://www.omdbapi.com?apikey=${process.env.REACT_APP_KEY}&s=${title}`
+      `https://www.omdbapi.com?apikey=${process.env.REACT_APP_KEY}&s=${title}`
     );
     const data = await response.json();
 
